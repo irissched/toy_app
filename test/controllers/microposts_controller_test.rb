@@ -2,6 +2,7 @@ require 'test_helper'
 
 class MicropostsControllerTest < ActionDispatch::IntegrationTest
   setup do
+    @user = User.create(email 'test', name: 'test2')
     @micropost = microposts(:one)
   end
 
